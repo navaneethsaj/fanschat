@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806180429226",
+    "firebase_url": "https://fanschat-d8b6a.firebaseio.com",
+    "project_id": "fanschat-d8b6a",
+    "storage_bucket": "fanschat-d8b6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806180429226:android:a2ee7c4304567ec6",
+        "android_client_info": {
+          "package_name": "com.agni.asus.fanschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806180429226-pph6mn13b7542mrvge516d6lrp5g0br3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agni.asus.fanschat",
+            "certificate_hash": "b7f2dcf8046442d7d287a1f97eaadea8270835e4"
+          }
+        },
+        {
+          "client_id": "806180429226-a89olujjfiv66c842ot8ar2buc4mkhuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyke93A39gQ9loNEq1EfbvgCUgjDoOcmA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806180429226-a89olujjfiv66c842ot8ar2buc4mkhuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

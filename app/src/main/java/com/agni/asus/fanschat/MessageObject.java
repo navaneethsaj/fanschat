@@ -10,6 +10,9 @@ public class MessageObject {
     private String name;
     private String photourl;
 
+    public MessageObject() {
+    }
+
     public MessageObject(String text, String name, String photourl) {
         this.text = text;
         this.name = name;

@@ -6,9 +6,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/namecolor"
         android:id="@+id/display_name"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/messagecolor"
         android:id="@+id/display_message"/>
 </LinearLayout>
