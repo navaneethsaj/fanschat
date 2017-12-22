@@ -86,10 +86,11 @@ public class MainActivity extends AppCompatActivity {
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent, "Select Picture"), RC_PHOTO_PICKER);*/
+                Toast.makeText(getApplicationContext(),"Clicked",Toast.LENGTH_SHORT).show();
             }
         });
 
-        //!!!!!!-------->>>>>> MEssage repeats the number of times the above button is clicked
+        //!!!!!!-------->>>>>> MEssage repeats the number of times the intent code is runned
 
 
         sendbutton.setOnClickListener(new View.OnClickListener() {
