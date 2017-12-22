@@ -7,4 +7,5 @@ package com.agni.asus.fanschat;
 public class Values {
     public static String group1="allfans";
     public static String anonymous="anonymous";
+    public static String imagereference="chat_images";
 }

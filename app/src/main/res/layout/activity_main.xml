@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.agni.asus.fanschat.MainActivity">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/picaso_test"/>
     <LinearLayout
         android:id="@+id/bottompart"
         android:layout_width="match_parent"
@@ -13,6 +16,14 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="setImageButton"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
 
         <EditText
             android:id="@+id/textmessage"
@@ -28,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="SEND" />
+
     </LinearLayout>
 
     <ListView
@@ -35,6 +47,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottompart"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/picaso_test" />
 </RelativeLayout>

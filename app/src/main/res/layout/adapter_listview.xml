@@ -12,5 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/messagecolor"
+        android:text="no text"
+        android:visibility="gone"
         android:id="@+id/display_message"/>
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/picasso_image"/>
 </LinearLayout>

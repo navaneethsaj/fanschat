@@ -8,7 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,15 +49,20 @@ public class MessageAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        view=layoutInflater.inflate(R.layout.adapter_listview,null);
-        String name=arrayList.get(i).getName();
-        String message=arrayList.get(i).getText();
+        if (view==null){
+            view=layoutInflater.inflate(R.layout.adapter_listview,null);
+        }
 
         TextView displayname=(TextView)view.findViewById(R.id.display_name);
         TextView displaymessage=(TextView)view.findViewById(R.id.display_message);
+        //ImageView picaso_image_View=(ImageView)view.findViewById(R.id.picasso_image);
 
-        displayname.setText(name);
-        displaymessage.setText(message);
+        displaymessage.setVisibility(View.VISIBLE);
+        //picaso_image_View.setVisibility(View.VISIBLE);
+
+        displayname.setText(arrayList.get(i).getName());
+        displaymessage.setText(arrayList.get(i).getText());
+        //Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(picaso_image_View);
 
         return view;
     }
